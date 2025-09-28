@@ -8,25 +8,61 @@ A modern, intelligent messaging platform that combines real-time communication w
 
 ## 🚀 Features
 
-- **Real-Time Messaging**: Engage in seamless, real-time conversations with instant message delivery.
-- **AI-Powered Text Enhancement**: Automatically correct grammar and adjust tone to improve message clarity and professionalism.
-- **Context-Aware AI Assistant**: Receive intelligent suggestions and contextually relevant replies from the AI assistant.
-- **User-Friendly Interface**: Clean and intuitive UI for optimal user experience.
-- **Responsive Design**: Fully responsive across devices.
+### Core Messaging
+- **Real-time Chat** – Instant messaging with Socket.io  
+- **User Discovery** – Search and connect with users by ID or phone number  
+- **Message Status** – Track sent, delivered, and read receipts  
+- **Online Status** – View active users in real-time  
+
+### AI Enhancement
+- **Grammar Correction** – Automatically fix grammar and spelling mistakes  
+- **Tone Adjustment** – Adjust message tone to:  
+  - Formal  
+  - Casual  
+  - Friendly  
+  - Professional  
+- **AI Chat Assistant** – Provides conversation suggestions, summarization, and context-aware replies  
+- **Multi-language Support** – Handles mixed languages (e.g., Hindi-English, Hinglish style)  
+- **Conversation Analysis** – AI analyzes recent chat history to adapt suggestions and maintain context  
+
+### User Experience
+- **Responsive Design** – Works seamlessly on desktop and mobile  
+- **Dark/Light Theme Support** – Comfortable viewing in any environment  
+- **Message History** – Persistent chat history with MongoDB  
+- **Unread Message Counter** – Never miss important updates  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, Tailwind CSS
-- **Backend**: Node.js, Express
-- **AI Integration**:  
-  - **Embeddings**: Hugging Face  
-  - **LLM / Agent**: Gemini  
-  - **Vector Database**: MongoDB Atlas (for storing embeddings)  
-  - **Agent Framework**: LangChain
-- **Authentication**: JWT (JSON Web Tokens)
+### Frontend
+- **React.js** – Modern UI framework  
+- **Tailwind CSS** – Utility-first styling  
+- **Socket.io Client** – Real-time communication  
+- **Axios** – HTTP client for API calls  
+- **React Router** – Client-side routing  
+- **React Hot Toast** – Notifications  
 
+### Backend
+- **Node.js** – JavaScript runtime  
+- **Express.js** – Web framework  
+- **Socket.io** – Real-time bidirectional communication  
+- **MongoDB + Mongoose** – NoSQL database with object modeling  
+- **JWT** – Authentication with JSON Web Tokens  
+- **bcrypt** – Password hashing  
+
+### AI Integration
+- **LangChain** – Orchestration framework for AI workflows
+- ***Gemini API*** -  Text enhancement (grammar, tone, suggestions)  
+- **Hugging Face Inference API** – embeddings  
+- **Conversation Context Engine** – Uses embeddings to analyze chat history and generate intelligent replies  
+
+---
+
+### Ongoing Development
+⚡ I’m actively working on improving the **AI agent** functionality in this project.  
+This includes making the conversation context engine smarter, adding more intelligent suggestions, and expanding features to make the chat experience more accurate and context-aware.  
+Expect new updates and enhancements almost every week!
 
 ---
 
@@ -55,4 +91,20 @@ A modern, intelligent messaging platform that combines real-time communication w
    ```bash
    git clone https://github.com/Parvjain2003/ai-chat-web.git
    cd ai-chat-web
+
+2. **Setup the backend**:
+   ```bash
+   cd backend
+   npm install
+   cp .env.example .env
+   # Update .env with your MongoDB URI and API key
+   node server.js
+
+3. **Setup the frontend**:
+   ```bash
+   cd ../frontend
+   npm install
+   cp .env.example .env
+   # Update .env with your backend API URL
+   npm start 
 
