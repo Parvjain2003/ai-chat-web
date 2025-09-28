@@ -74,6 +74,12 @@ Expect new updates and enhancements almost every week!
 ![Chat Interface](https://github.com/Parvjain2003/ai-chat-web/raw/main/screenshots/chat-interface.png)
 *The chat interface with real-time messaging and AI suggestions.*
 
+![Registration Page](https://github.com/Parvjain2003/ai-chat-web/raw/main/screenshots/registration.png)
+*User registration page for creating a new account.*
+
+![Sign-In Page](https://github.com/Parvjain2003/ai-chat-web/raw/main/screenshots/signin.png)
+*Sign-in page for existing users to log in.*
+
 ---
 
 ## ⚙️ Installation
